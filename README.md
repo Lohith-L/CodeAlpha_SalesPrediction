@@ -37,7 +37,7 @@ contributes, and test **what-if budget scenarios** that marketing teams can act 
 | Features | `TV`, `Radio`, `Newspaper` (advertising spend in $ thousands) |
 | Target | `Sales` (in thousands of units) |
 
-The dataset is included in the [`data/`](data/) folder, so the notebook runs without any extra downloads.
+The dataset file is included in this repository, so the notebook runs without any extra downloads.
 
 ## 🔄 Project Workflow
 1. **Data cleaning**: dropped the index column; checked for missing values, duplicates and negative values
@@ -62,88 +62,4 @@ The dataset is included in the [`data/`](data/) folder, so the notebook runs wit
 > Models are compared using **5-fold cross-validation** on the training set. The test set is held out until the end for a fair final check.
 
 ## 💡 Key Insights
-- 📻 **Radio gives the best return:** about **190 extra units per extra $1,000**, compared with about 45 for TV.
-- 📰 **Newspaper has almost no effect** on sales. Dropping it does not make the model worse.
-- 🤝 **TV and Radio work best together.** Modelling their interaction raised R² from 0.87 to 0.98.
-- 📺 **TV has diminishing returns.** Each extra dollar adds less once TV spend is already high.
-- 💡 **Moving the newspaper budget to radio** is predicted to raise sales by about **35%** with the same total budget.
-
-**Recommendations:** cut newspaper spend, plan TV and radio campaigns together, watch for TV saturation,
-and confirm the changes with A/B tests in a few markets before rolling them out.
-
-## 🖼️ Visualizations
-### How TV and Radio work together
-![How TV and Radio work together](images/tv_radio_synergy.png)
-
-### Sales vs spend on each channel
-![Sales vs spend on each channel](images/sales_vs_channels.png)
-
-### Model results
-![Model results](images/model_results.png)
-
-More charts are available in the [`images/`](images/) folder and in the notebook.
-
-## 🗂️ Project Structure
-```
-CodeAlpha_SalesPrediction/
-├── Sales_Prediction.ipynb                # Full analysis with code, charts and explanations
-├── sales_prediction.py                     # Same analysis as a plain Python script
-├── data/                                   # Dataset
-├── images/                                 # Saved charts
-├── requirements.txt                        # Python dependencies
-└── README.md
-```
-
-## 🚀 Getting Started
-
-**1. Clone the repository**
-```bash
-git clone https://github.com/Lohith-L/CodeAlpha_SalesPrediction.git
-cd CodeAlpha_SalesPrediction
-```
-
-**2. (Optional) Create a virtual environment**
-```bash
-python -m venv venv
-source venv/bin/activate        # Windows: venv\Scripts\activate
-```
-
-**3. Install the dependencies**
-```bash
-pip install -r requirements.txt
-```
-
-**4. Open the notebook**
-```bash
-jupyter notebook Sales_Prediction.ipynb
-```
-Then choose **Kernel → Restart & Run All**.
-
-Or run the Python script instead:
-```bash
-python sales_prediction.py
-```
-
-## 🛠️ Tech Stack
-| Tool | Purpose |
-|---|---|
-| Python | Programming language |
-| Pandas, NumPy | Data cleaning and manipulation |
-| Matplotlib, Seaborn | Data visualization |
-| Scikit-learn | Machine learning models and evaluation |
-| Jupyter Notebook | Interactive analysis |
-
-## 👤 Author
-
-**Lohith L**
-BCA Student · Data Science Intern at CodeAlpha
-
-- GitHub: [@Lohith-L](https://github.com/Lohith-L)
-
-## 🙏 Acknowledgements
-
-- [CodeAlpha](https://www.codealpha.tech) for the internship opportunity and project guidance
-- [Kaggle](https://www.kaggle.com) for the dataset
-
----
-⭐ If you found this project useful, consider giving it a star!
+- 📻 **Radio gives the best return:** about **190 extra units per extra $1,000**
